@@ -2,10 +2,11 @@ module com.praktikum {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens com.praktikum to javafx.fxml;
-    exports com.praktikum;
-    exports codelab;
-    exports praktek1;
-    exports praktek2;
-    exports praktek3;
+    opens com.praktikum.gui to javafx.graphics;
+
+    exports com.praktikum.gui;
+    exports com.praktikum.data;
+    exports com.praktikum.users;
+    exports com.praktikum.actions;
+    exports com.praktikum.main;
 }
